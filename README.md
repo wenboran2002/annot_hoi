@@ -5,7 +5,7 @@
 **下载** （如果电脑已安装blender版本>2.83，需要重新安装一个2.83版本）
 * 官网下载：[https://download.blender.org/release/Blender2.83/]
 * 安装包：[blender-2.83](https://github.com/username/repository/tree/branch/directory)
-  (https://github.com/wenboran2002/annot_hoi/blob/main/imgs/install.png))
+  ![install](https://github.com/wenboran2002/annot_hoi/blob/main/imgs/install.png))
 
 **安装插件**
 1. 先按a再按Del清楚现有物体
