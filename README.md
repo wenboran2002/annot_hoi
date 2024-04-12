@@ -9,8 +9,8 @@
 
 **安装插件**
 1. 先按a再按Del清楚现有物体
-2. 在上边栏选择Edit->Preference->Add-ons,点击install
-3. 找到scripts/annot.py并安装，同时在搜索栏搜索annot,找到后在左边方框打√
+2. 在上边栏选择Edit->Preference->Add-ons,点击install ![step1](https://github.com/wenboran2002/annot_hoi/blob/main/imgs/step3.png)
+3. 找到scripts/annot.py并安装，同时在搜索栏搜索annot,找到后在左边方框打√  ![step1](https://github.com/wenboran2002/annot_hoi/blob/main/imgs/step4.png)
 
 **标注**
 1. 点击右上角Load Wbr,在\src\humans中选择对应的object文件夹
