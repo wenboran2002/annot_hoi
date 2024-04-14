@@ -20,7 +20,7 @@ def resize_images(directory):
             ratio = 100 / width
             
             # Resize the image
-            new_width = 100
+            new_width = 400
             new_height = int(height * ratio)
             img = img.resize((new_width, new_height), Image.ANTIALIAS)
             
