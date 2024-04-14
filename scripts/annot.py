@@ -1,6 +1,7 @@
 import bpy
 import os
 import json
+import math
 # Global variable to store the last used directory
 bl_info = {
     "name": "hoi annot blender",
@@ -15,7 +16,8 @@ bl_info = {
 }
 
 last_directory = "//"
-dir_temp=''
+dir_tmp=''
+tmp_annot=''
 # test_dir='D:/pythonProject/SMPL_VOLUME/3d annot/'
 # result_dir='D:/pythonProject/SMPL_VOLUME/annot_template/new_template_result/surfboard/'
 # template_dir='D:/pythonProject/3d prototype library/new_library/surfboard/'
@@ -29,17 +31,20 @@ class LoadPLYOperator(bpy.types.Operator):
 #    with open('D:/pythonProject/SMPL_VOLUME/annot_template/template_result/')
     def execute(self, context):
         global last_directory
+        global dir_tmp
+        global tmp_annot
         filepath = bpy.path.abspath(self.filepath)
         print('loadobj',self.filepath)
         obj_name=self.filepath.split('\\')[-1]
         category=self.filepath.split('\\')[-2]
         name=obj_name.split('.')[0]
-        result_path=self.filepath.split('humans')[0]+'annotation/'+category+'/result.json'
-        with open(result_path) as f:
-            annot=json.load(f)
-        state=annot[name+'.jpg']
-        print(state)
-        template_path=self.filepath.split('humans')[0]+'templates/'+category+'/'+str(state)+'.ply'
+#        result_path=self.filepath.split('humans')[0]+'annotation/'+category+'/result.json'
+#        with open(result_path) as f:
+#            annot=json.load(f)
+#        state=annot[name+'.jpg']
+#        print(state)
+#        template_path=self.filepath.split('humans')[0]+'templates/'+category+'/'+str(state)+'.ply'
+        template_path=self.filepath.split('human')[0]+'obj/'+category+'/'+name+'.ply'
         # Load .ply file
         bpy.ops.import_scene.obj(filepath=filepath)
         imported_object = bpy.context.selected_objects[0]  # Assuming the imported object is selected
@@ -50,13 +55,18 @@ class LoadPLYOperator(bpy.types.Operator):
         imported_object.lock_scale = (True, True, True)     # Locks scale
         
         bpy.ops.import_mesh.ply(filepath=template_path)
-        img_path=self.filepath.split('humans')[0]+'images/'+category+'/'+name+'.jpg'
+        obj_now = bpy.context.active_object
+
+        # Rotate the object along the X-axis by -90 degrees (in radians)
+        obj_now.rotation_euler.x = math.radians(90)
+        img_path=self.filepath.split('human')[0]+'show_boxes/'+category+'/'+name+'.jpg'
         bpy.ops.object.load_reference_image(filepath=img_path)
         bpy.context.object.rotation_euler[0] = 80
-        bpy.context.object.location[1] = -2
+        bpy.context.object.location[1] = -10
         # Update last used directory
         last_directory = os.path.dirname(filepath)
-        dir_tmp=self.filepath
+        dir_tmp=self.filepath.split('src')[0]+'result/'+category+'/'+name+'.obj'
+        tmp_annot=self.filepath.split('src')[0]+'result/'+category+'/'+name+'.json'
 
         return {'FINISHED'}
 
@@ -77,25 +87,27 @@ class ExportObjectPoseLocation(bpy.types.Operator):
         object_data = {}
 
         # Loop through objects
-        for obj in objects:
-            # Check if object is visible and selectable
-            if obj.visible_get() and obj.select_get():
-                # Get object pose and location
-                pose = obj.matrix_world.to_translation()
-                rotation = obj.matrix_world.to_euler()
+#        for obj in objects:
+#            # Check if object is visible and selectable
+#            if obj.visible_get() and obj.select_get():
+#                # Get object pose and location
+#                pose = obj.matrix_world.to_translation()
+#                rotation = obj.matrix_world.to_euler()
 
-                # Store object data in dictionary
-                object_data[obj.name] = {
-                    "pose": [pose.x, pose.y, pose.z],
-                    "rotation": [rotation.x, rotation.y, rotation.z]
-                }
+#                # Store object data in dictionary
+#                object_data = {
+#                    "pose": list(pose),
+#                    "rotation": list(rotation),
+#                    "scale":list(obj.scale)
+#                }
 
-        # Save object data to JSON file
-        with open(test_dir+"object_data.json", "w") as json_file:
-            json.dump(object_data, json_file, indent=4)
+#        # Save object data to JSON file
+#        print(dir_tmp)
+#        with open(tmp_annot, "w") as json_file:
+#            json.dump(object_data, json_file, indent=4)
 
         # Export scene to OBJ file
-        bpy.ops.export_scene.obj(filepath=test_dir+"exported_scene.obj")
+        bpy.ops.export_scene.obj(filepath=dir_tmp, use_selection=True)
         
         return {'FINISHED'}
 class T_HT_A(bpy.types.Header):

@@ -1,11 +1,36 @@
-### Blender
+### 3D HOI Blender Annotation Tool
 **简介**
 基于blender的3d hoi标注工具，从包含human mesh的文件夹读入mesh,同时会自动读入物体的点云以及参考图片，标注者根据参考图片<font color=red>放缩、移动、旋转</font>物体使3d布局符合图片布局。
 
-**下载** （如果电脑已安装blender版本>2.83，需要重新安装一个2.83版本）
+
+
+**下载** 
+project:
+如果电脑有gti可以使用
+`git clone https://github.com/wenboran2002/annot_hoi.git`下载
+如果没有可以点击Code->DownloadZIP下载并解压
+
+blender:
+（如果电脑已安装blender版本>2.83，需要重新安装一个2.83版本）
 * 官网下载：[https://download.blender.org/release/Blender2.83/]
-* 安装包：[blender-2.83](https://github.com/username/repository/tree/branch/directory)
+* 安装包：blender-2.83 数据在[交大云盘](https://jbox.sjtu.edu.cn/l/V1Tlmx)
   ![install](https://github.com/wenboran2002/annot_hoi/blob/main/imgs/install.png))
+  
+**数据准备**
+从[交大云盘](https://jbox.sjtu.edu.cn/l/V1Tlmx)下载所需要的数据，如图：
+解压在/src
+目录结构如下：
+```
+- annot_hoi
+  - src
+      - annotaion
+      - templates
+      - obj
+      - human
+      - show_boxes
+  -scripts
+  - ...
+```
 
 **安装插件**
 1. 先按a再按Del清除现有物体
