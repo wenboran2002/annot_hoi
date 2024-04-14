@@ -17,10 +17,10 @@ def resize_images(directory):
             width, height = img.size
             
             # Calculate the ratio to resize the image to a width of 100 pixels
-            ratio = 100 / width
+            ratio = 600 / width
             
             # Resize the image
-            new_width = 400
+            new_width = 600
             new_height = int(height * ratio)
             img = img.resize((new_width, new_height), Image.ANTIALIAS)
             
