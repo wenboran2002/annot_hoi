@@ -2,7 +2,7 @@
 **简介**
 基于blender的3d hoi标注工具，从包含human mesh的文件夹读入mesh,同时会自动读入物体的点云以及参考图片，标注者根据参考图片<font color=red>放缩、移动、旋转</font>物体使3d布局符合图片布局。
 使用视频：[bilibili](https://www.bilibili.com/video/BV1SE421T7cb/)
-或者从[交大云盘](https://jbox.sjtu.edu.cn/l/V1Tlmx)下载
+或者从[交大云盘](https://jbox.sjtu.edu.cn/l/61ZUCj)下载
 
 
 
@@ -15,11 +15,11 @@ project:
 blender:
 （如果电脑已安装blender版本>2.83，需要重新安装一个2.83版本）
 * 官网下载：[https://download.blender.org/release/Blender2.83/]
-* 安装包：blender-2.83 数据在[交大云盘](https://jbox.sjtu.edu.cn/l/V1Tlmx)
+* 安装包：blender-2.83 数据在[交大云盘](https://jbox.sjtu.edu.cn/l/61ZUCj)
   ![install](https://github.com/wenboran2002/annot_hoi/blob/main/imgs/install.png))
   
 **数据准备**
-从[交大云盘](https://jbox.sjtu.edu.cn/l/V1Tlmx)下载所需要的数据，如图：
+从[交大云盘](https://jbox.sjtu.edu.cn/l/61ZUCj)下载所需要的数据，如图：
 解压在/src
 目录结构如下：
 ```
