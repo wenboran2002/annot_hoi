@@ -28,6 +28,7 @@ blender:
       - obj
       - human
       - show_boxes
+      - blender-2.83.0-windows64
   -scripts
   - ...
 ```
@@ -37,6 +38,7 @@ blender:
 2. 在上边栏选择Edit->Preference->Add-ons,点击install ![step1](https://github.com/wenboran2002/annot_hoi/blob/main/imgs/step3.png)
 3. 找到scripts/annot.py并安装，同时在搜索栏搜索annot,找到后在左边方框打√  ![step1](https://github.com/wenboran2002/annot_hoi/blob/main/imgs/step4.png)
 ![step1](https://github.com/wenboran2002/annot_hoi/blob/main/imgs/step8.png)
+4. 同样的方法安装scripts/space_view3d_point_cloud_visualizer.py
 **标注**
 1. 点击右上角Load Wbr,在\src\human中选择对应的object文件夹![step1](https://github.com/wenboran2002/annot_hoi/blob/main/imgs/step6.png)
 2. 依序load文件，同时会load进物体以及参考图片
