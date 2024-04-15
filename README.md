@@ -23,7 +23,7 @@ blender:
 ```
 - annot_hoi
   - src
-      - annotaion
+      - annotation
       - templates
       - obj
       - human
@@ -34,11 +34,11 @@ blender:
 
 **安装插件**
 1. 先按a再按Del清除现有物体
-2. 在上边栏选择Edit->Preference->Add-ons,点击install ![step1](https://github.com/wenboran2002/annot_hoi/blob/main/imgs/step3.png)
+2. 在上边栏选择Edit->Preference->Add-ons,点击install <summary>![step1](https://github.com/wenboran2002/annot_hoi/blob/main/imgs/step3.png)</summary>
 3. 找到scripts/annot.py并安装，同时在搜索栏搜索annot,找到后在左边方框打√  ![step1](https://github.com/wenboran2002/annot_hoi/blob/main/imgs/step4.png)
 ![step1](https://github.com/wenboran2002/annot_hoi/blob/main/imgs/step8.png)
 **标注**
-1. 点击右上角Load Wbr,在\src\humans中选择对应的object文件夹![step1](https://github.com/wenboran2002/annot_hoi/blob/main/imgs/step6.png)
+1. 点击右上角Load Wbr,在\src\human中选择对应的object文件夹![step1](https://github.com/wenboran2002/annot_hoi/blob/main/imgs/step6.png)
 2. 依序load文件，同时会load进物体以及参考图片
 3. 用鼠标拖动右上角的z轴朝下，使视角正过来![step1](https://github.com/wenboran2002/annot_hoi/blob/main/imgs/step7.png)
 4. 选中物体，开始标注：
