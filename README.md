@@ -42,6 +42,7 @@ blender:
 ![step1](https://github.com/wenboran2002/annot_hoi/blob/main/imgs/step8.png)
 4. 同样的方法安装scripts/space_view3d_point_cloud_visualizer.py
 **标注**
+***需要达到效果：移动物体使人和物体的相对关系与图片中的符合，不一定完全一致，至少要求相对大小、位置以及大致的pose一致***
 1. 点击右上角Load Wbr,在\src\human中选择对应的object文件夹![step1](https://github.com/wenboran2002/annot_hoi/blob/main/imgs/step6.png)
 2. 依序load文件，同时会load进物体以及参考图片
 3. 用鼠标拖动右上角的z轴朝下，使视角正过来![step1](https://github.com/wenboran2002/annot_hoi/blob/main/imgs/step7.png)
@@ -49,14 +50,15 @@ blender:
    按<font color=red>s</font>同时移动鼠标为放缩
    按<font color=red>g</font>同时移动鼠标为移动
    按<font color=red>r</font>同时移动鼠标为左右旋转
-   按<font color=red>两次r</font>同时移动鼠标为前后旋转
+   按<font color=red>两次r</font>同时移动鼠标为任意旋转
    鼠标拖动可以移动场景，确保各个方位都摆放好
 5. 标注结束后，点击右上角Export Object Pose and Location保存结果
 6. 按a全选并按Del删除当前全部物体
 7. 继续点击Load Wbr导入下一个物体
+8. 如果实在难以匹配，或者人体重建明显有问题，点击右上角delete删除
 
 **注意**
 1. 很多图片人体和物体无法精确按照图片摆放，优先保证物体和人相对大小、物体姿态以及位置的准确
 2. 参考图片中有各别图片物体框明显不准，这种情况按照经验和常识进行摆放
 3. 对于实在无法标注的图片请记录下来
-4. 人和图片位置已经锁定，不可以解锁移动
+4. 人的位置已经锁定，不可以解锁移动
