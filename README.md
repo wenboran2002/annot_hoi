@@ -1,7 +1,7 @@
 ### 3D HOI Blender Annotation Tool
 **简介**
 基于blender的3d hoi标注工具，从包含human mesh的文件夹读入mesh,同时会自动读入物体的点云以及参考图片，标注者根据参考图片<font color=red>放缩、移动、旋转</font>物体使3d布局符合图片布局。
-使用视频：![bilibili](https://www.bilibili.com/video/BV1SE421T7cb/)
+使用视频：[bilibili](https://www.bilibili.com/video/BV1SE421T7cb/)
 或者从[交大云盘](https://jbox.sjtu.edu.cn/l/V1Tlmx)下载
 
 
