@@ -14,7 +14,7 @@ blender:
 （如果电脑已安装blender版本>2.83，需要重新安装一个2.83版本）
 * 官网下载：[https://download.blender.org/release/Blender2.83/]
 * 安装包：blender-2.83 数据在[交大云盘](https://jbox.sjtu.edu.cn/l/V1Tlmx)
-  ![install](https://github.com/wenboran2002/annot_hoi/blob/main/imgs/install.png))
+  <summary>![install](https://github.com/wenboran2002/annot_hoi/blob/main/imgs/install.png))</summary>
   
 **数据准备**
 从[交大云盘](https://jbox.sjtu.edu.cn/l/V1Tlmx)下载所需要的数据，如图：
