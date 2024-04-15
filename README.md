@@ -14,7 +14,7 @@ blender:
 （如果电脑已安装blender版本>2.83，需要重新安装一个2.83版本）
 * 官网下载：[https://download.blender.org/release/Blender2.83/]
 * 安装包：blender-2.83 数据在[交大云盘](https://jbox.sjtu.edu.cn/l/V1Tlmx)
-  <summary>![install](https://github.com/wenboran2002/annot_hoi/blob/main/imgs/install.png))</summary>
+  ![install](https://github.com/wenboran2002/annot_hoi/blob/main/imgs/install.png))
   
 **数据准备**
 从[交大云盘](https://jbox.sjtu.edu.cn/l/V1Tlmx)下载所需要的数据，如图：
@@ -34,7 +34,7 @@ blender:
 
 **安装插件**
 1. 先按a再按Del清除现有物体
-2. 在上边栏选择Edit->Preference->Add-ons,点击install <summary>![step1](https://github.com/wenboran2002/annot_hoi/blob/main/imgs/step3.png)</summary>
+2. 在上边栏选择Edit->Preference->Add-ons,点击install ![step1](https://github.com/wenboran2002/annot_hoi/blob/main/imgs/step3.png)
 3. 找到scripts/annot.py并安装，同时在搜索栏搜索annot,找到后在左边方框打√  ![step1](https://github.com/wenboran2002/annot_hoi/blob/main/imgs/step4.png)
 ![step1](https://github.com/wenboran2002/annot_hoi/blob/main/imgs/step8.png)
 **标注**
