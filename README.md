@@ -41,6 +41,7 @@ blender:
 3. 找到scripts/annot.py并安装，同时在搜索栏搜索annot,找到后在左边方框打√  ![step1](https://github.com/wenboran2002/annot_hoi/blob/main/imgs/step4.png)
 ![step1](https://github.com/wenboran2002/annot_hoi/blob/main/imgs/step8.png)
 4. 同样的方法安装scripts/space_view3d_point_cloud_visualizer.py
+   
 **标注**
 ***需要达到效果：移动物体使人和物体的相对关系与图片中的符合，不一定完全一致，至少要求相对大小、位置以及大致的pose一致***
 1. 点击右上角Load Wbr,在\src\human中选择对应的object文件夹![step1](https://github.com/wenboran2002/annot_hoi/blob/main/imgs/step6.png)
