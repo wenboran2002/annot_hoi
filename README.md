@@ -37,10 +37,10 @@ blender:
 
 **安装插件**
 1. 先按a再按Del清除现有物体
-2. 在上边栏选择Edit->Preference->Add-ons,点击install ![step1](https://github.com/wenboran2002/annot_hoi/blob/main/imgs/step3.png)
-3. 找到scripts/annot.py并安装，同时在搜索栏搜索annot,找到后在左边方框打√  ![step1](https://github.com/wenboran2002/annot_hoi/blob/main/imgs/step4.png)
-![step1](https://github.com/wenboran2002/annot_hoi/blob/main/imgs/step8.png)
-4. 同样的方法安装scripts/space_view3d_point_cloud_visualizer.py
+2. 在上边栏选择Edit->Preference->Add-ons,点击install ![step1](https://github.com/wenboran2002/annot_hoi/blob/main/imgs/1.png)
+3. 找到scripts/annot.py和scripts/space_view3d_point_cloud_visualizer.py并安装，同时在搜索栏搜索annot和point cloud,找到后在左边方框打√  ![step1](https://github.com/wenboran2002/annot_hoi/blob/main/imgs/2.png)
+![step1](https://github.com/wenboran2002/annot_hoi/blob/main/imgs/3.png)
+4. 安装完成后右上角会出现三个按钮Load Wbr , Export Obj Pose and Location, Delete_this_object
    
 **标注**
 ***需要达到效果：移动物体使人和物体的相对关系与图片中的符合，不一定完全一致，至少要求相对大小、位置以及大致的pose一致***
