@@ -49,15 +49,16 @@ blender:
 3. 用鼠标拖动右上角的z轴朝下，使视角正过来![step1](https://github.com/wenboran2002/annot_hoi/blob/main/imgs/step7.png)
 4. 选中物体，开始标注：
    按<font color=red>s</font>同时移动鼠标为放缩
+   ![step1](https://github.com/wenboran2002/annot_hoi/blob/main/imgs/rotate.gif)
    按<font color=red>g</font>同时移动鼠标为移动
    按<font color=red>r</font>同时移动鼠标为左右旋转
    按<font color=red>两次r</font>同时移动鼠标为任意旋转
    鼠标拖动可以移动场景，确保各个方位都摆放好
-5. ***注意：***先旋转放缩物体使其与图片姿态匹配，再移动到合适位置，因为旋转放缩是参考原点的
-6. 标注结束后，点击右上角Export Object Pose and Location保存结果
-7. 按a全选并按Del删除当前全部物体
-8. 继续点击Load Wbr导入下一个物体，此时不再需要调整视角
-9. 如果实在难以匹配，或者人体重建明显有问题，点击右上角delete删除
+6. ***注意***:先旋转放缩物体使其与图片姿态匹配，再移动到合适位置，因为旋转放缩是参考原点的
+7. 标注结束后，点击右上角Export Object Pose and Location保存结果
+8. 按a全选并按Del删除当前全部物体
+9. 继续点击Load Wbr导入下一个物体，此时不再需要调整视角
+10. 如果实在难以匹配，或者人体重建明显有问题，点击右上角delete删除
 
 **注意**
 1. 很多图片人体和物体无法精确按照图片摆放，优先保证物体和人相对大小、物体姿态以及位置的准确
